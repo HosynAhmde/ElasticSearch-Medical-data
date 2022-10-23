@@ -1,0 +1,21 @@
+{
+  "name": "elasticsearch-medical-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon nodeindex.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.4.0",
+    "array-to-ndjson": "^1.0.1",
+    "csv-parse": "^5.3.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "highland": "^2.13.5"
+  }
+}
