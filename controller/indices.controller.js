@@ -109,7 +109,7 @@ async function removeindex(req, res, next) {
   }
 }
 
-async function searchAllArticles(req, res, next) {
+async function fullTextSeach(req, res, next) {
   try {
     const { value } = req.query;
     const articles = await elasticClient.search({
@@ -122,7 +122,7 @@ async function searchAllArticles(req, res, next) {
   }
 }
 
-async function searchByRegex(req, res, next) {
+async function searchByFilter(req, res, next) {
   try {
     const { search } = req.query;
     // search = search.toLowercase();
@@ -144,6 +144,6 @@ module.exports = {
   createIndex,
   getindices,
   removeindex,
-  searchAllArticles,
-  searchByRegex,
+  fullTextSeach,
+  searchByFilter,
 };
